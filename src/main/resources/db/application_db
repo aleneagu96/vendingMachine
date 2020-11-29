@@ -1,0 +1,31 @@
+CREATE DATABASE vending_machine_container----------------------------------------------------------------------------------------------CREATE TABLE items (
+	item_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(40),
+    price FLOAT,
+    quantity INT
+    )------------------------------------------------------------------------------------------------
+CREATE TABLE money (
+	coin_id INT PRIMARY KEY AUTO_INCREMENT,
+    coin_type VARCHAR(20),
+    quantity int
+    )
+-----------------------------------------------------------------------------------------------------
+INSERT INTO money
+(coin_type, quantity)
+VALUES
+("Penny", 50),
+("Nickel", 50),
+("Dime", 100),
+("Quarter", 150)
+--------------------------------------------------------------------------------------------------------
+INSERT INTO items
+(name, price, quantity)
+VALUES
+("Chocolate Bar", 0.35, 40),
+("Granola Bar", 0.25, 20),
+("Lemon Soda", 0.5, 10),
+("Kooky-Cola", 0.75, 20),
+("Salty chips", 1, 20),
+("Cheesy chips",1.25,20),
+("Chicken Sandwich", 2.5, 10),
+("BLT Sandwich", 1.75, 10)
